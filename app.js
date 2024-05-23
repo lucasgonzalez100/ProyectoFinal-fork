@@ -3,7 +3,10 @@ const express = require('express');
 const app = express();
 const httpServer = require('http').createServer(app);
 const {Server} = require('socket.io');
+
 const userRouter = require('./Routes/userRoutes.js')
+const indexRouter = require('./Routes/indexRouter.js')
+
 const  mongoose  = require('mongoose');
 const dotenv = require('dotenv');
 
@@ -51,7 +54,7 @@ const cartsRouter = require('./Routes/cartsRoutes.js');
 app.use('/', productsRouter);
 app.use('/api', cartsRouter);
 app.use('/api/users', userRouter)
-// app.use('/', "welcome");
+app.use('/', indexRouter);
 
 
 
