@@ -1,7 +1,7 @@
 module.exports = (io) => {
 const express = require('express');
 const router = express.Router();
-const ProductManager = require('../../DAO/productManager');
+const ProductManager = require('../DAO/productManager');
 const productManager = new ProductManager('./data/archivo.json');
 const bodyParser = require('body-parser');
 

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const User = require('../DAO/usersManager.js')
-const { createHash, isValidPassword } = require('../../Utils/bcrypt.js');
+const { createHash, isValidPassword } = require('../Utils/bcrypt.js');
 const initializePassport  = require('../config/passportConfig.js');
 const { generateToken ,authToken } = require('../config/jwtConfig.js');
 const passport = require('passport');
