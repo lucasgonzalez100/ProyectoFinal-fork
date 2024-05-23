@@ -51,6 +51,9 @@ const cartsRouter = require('./Routes/cartsRoutes.js');
 app.use('/', productsRouter);
 app.use('/api', cartsRouter);
 app.use('/api/users', userRouter)
+// app.use('/', "welcome");
+
+
 
 
 // Configuración de archivos estáticos y Handlebars
