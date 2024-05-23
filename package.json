@@ -1,5 +1,7 @@
 {
   "scripts": {
+
+    "install-prod": "npm install --omit=dev",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
