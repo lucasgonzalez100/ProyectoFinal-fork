@@ -8,18 +8,6 @@ const  mongoose  = require('mongoose');
 const dotenv = require('dotenv');
 
 dotenv.config();
-// const session = require ('express-session');
-// const FileStore = require ('session-file-store');
-
-// const fileStore= FileStore(session)
-// app.use(session({
-//   secret:'CoderHouse',
-//   store: MongoStore.create({
-//     mongoUrl:'mongodb+srv://gonzalezlucasnicolas69:123@cluster0.xi8psab.mongodb.net/?retryWrites=true&w=majority'
-//   }),
-//   resave: true,
-//   saveUninitialized: true
-// }));
 
 const server = httpServer.listen(8080, () => {
   console.log("Servidor escuchando en el puerto 8080");
